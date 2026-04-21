@@ -1,0 +1,689 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Navbar */
+
+
+.navbar{
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+    background-color: #5c0e14;
+    font-size: 18px;
+}
+.navbar a{
+    color: white;
+}
+.navbar a:hover{
+    color: sienna;
+    text-decoration: none;
+}
+
+.div{
+    background-color: black;
+    color: white ;
+}
+/*main image*/
+
+
+
+.fluid{
+    overflow: hidden;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,100%);
+}
+.col1{
+    width: 100%;
+}
+.m-0{
+     width:100%; 
+    height: 100%;;
+}
+
+
+/*animation image*/
+
+
+.fluid{
+    background-color: black;
+}
+.carousel {
+    overflow: hidden;
+    background-color: black;
+    border-radius: 5px;
+    box-sizing: 20px 35px 35px rgba(0, 0, 0, 5);
+}
+
+.image-container {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 250px;
+    justify-items: stretch;
+    animation: animation 12s linear infinite;
+}
+
+.image-container img {
+    width: 200px;
+    height: 270px;
+    border-radius: 12px;
+    object-fit: cover;
+    border: 1px solid #a5b2c2;
+}
+
+@keyframes animation {
+    to {
+        translate: calc(-4*250px);
+    }
+}
+
+
+
+
+/*video*/
+
+
+
+.video{
+
+    width: auto;
+    margin: auto;
+    display: grid;
+    justify-content: center;
+    overflow: hidden;
+}
+.object-cover{
+    object-fit: contain;
+   margin: auto;
+   
+}
+.video video{
+    text-align: center;
+}
+
+/* card about */
+.para2{
+    font-size: 20px;
+    background-color: black; 
+    color: white; 
+    text-align: center; 
+    font-family: Arial, Helvetica, sans-serif;
+}
+.para3{
+    margin-top: -13px; 
+    font-size: 10px; 
+    color:black;
+    font-style: oblique; 
+    text-align: center;
+}
+.para4{
+    margin-top: -16px; 
+    font-size: 20px;
+    color:black;
+    font-style: oblique; 
+    text-align: center;
+}
+
+/*product cards*/
+
+
+
+
+.container img:hover{
+    transform: scale(1.1);
+    transition: 1s ;
+}
+
+.container{
+    text-wrap: balance;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,100%);
+    align-items: center;
+}
+.main{
+    overflow: hidden;
+    margin: auto;
+    padding: 0;
+    height: 490px;
+    width: 290px;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+}
+.main img{
+    margin: auto ;
+    height: 400px;
+    width: 100%;
+}
+.main .p1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: -5px;
+}
+.main .p2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: -13px;
+}
+.main h6{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.container .main{
+    color: black;
+    background-color: white;
+}
+.main,.mt-3,.p1,.p2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+/* tech page*/
+
+
+.tech{
+    overflow: hidden;
+    text-align: center;  
+    border: 1px solid black;
+    text-wrap: balance;
+}
+.doc-c ,a{
+    text-decoration: none;
+    color: #e8e8e8;
+
+}
+
+.doc-c ,.btun{
+    width: 100%;
+    padding: 30px;
+    margin-bottom: 20px;
+}
+.btun{
+    background-color: black;
+}
+/* Sale Ad */
+.sale-ad {
+    background: linear-gradient(90deg, #5c0e14, #9d1f15);
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Video Section */
+.video {
+    position: relative;
+    overflow: hidden;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: black;
+    margin-bottom: 40px;
+}
+
+.video video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.9;
+    transition: opacity 0.5s ease;
+}
+
+.video:hover video {
+    opacity: 1;
+}
+
+/* Tech Section */
+.tech {
+    padding: 60px 20px;
+    background: white;
+}
+
+.doc-b {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.doc-b h4 {
+    color: #5c0e14;
+    margin-top: 40px;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.doc-b h5 {
+    color: #333;
+    margin-top: 20px;
+    font-size: 1.5rem;
+}
+
+.doc-b p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+
+.doc-b img {
+    display: block;
+    margin: 20px auto;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.doc-b img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+/* techButtons */
+.doc-c {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.btun {
+    background: #5c0e14;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.btun:hover {
+    background: #ff6b6b;
+    transform: translateY(-5px);
+}
+
+.btun a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .video {
+        height: 50vh;
+    }
+
+    .doc-b img {
+        width: 100%;
+    }
+
+    .doc-c {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .email-event input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+/*event email*/
+
+
+
+
+.email-event{
+    
+    border: 2px solid black;
+     display: flex;
+     align-items: center;
+     height: 230px;
+     background-color:  black;
+  }
+  .email-event .container-fluid{
+    border: 2px solid black;
+    height: 143px;
+    width: 500px;
+    background-color: black;
+    color: white;
+  }
+  .container-fluid button{
+    font-size: 15px;
+    color: white;
+    background-color:black;
+    padding: 3px;
+    height: 39px;
+    width: 75px;  
+  }
+  .email-event input{
+    font-family: 'Times New Roman', Times, serif;
+    width: 70%;
+    height: 30%;
+  }
+  .container-fluid p{
+    text-wrap: balance;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+
+
+  /* sport page*/
+
+/* banners */
+
+
+
+
+
+  #banner{
+    background-color: antiquewhite;
+    height: 40vh;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 5px 5px 0 0 black;
+    width: 100%;
+  }
+  #banner h4{
+    font-size: 14px;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  #banner h2 span{
+    color: maroon;
+  }
+  #banner h2 {
+    font-family: 'Times New Roman', Times, serif;
+  }
+  #banner button {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #5c0e14;
+    color: white;
+    padding: 5px;
+    border-radius: 5px 5px 5px 5px;
+  }
+
+
+/*footer*/
+
+
+
+footer a {
+    text-decoration: none;
+    color: #cecece;
+    white-space: nowrap;
+}
+
+footer a:hover {
+    color: #ffffff;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer {
+    width: 100%;
+    background:black;
+    color: #e8e8e8;
+}
+
+.footer-wrapper {
+    display: grid;
+    max-width: 1080px;
+    gap: 15px;
+    padding: 25px 10px 10px;
+    grid-template-areas: "brand brand brand brand"
+        "list1 list2 list3 newsletter"
+        "bottom bottom bottom bottom";
+    margin: 0 auto;
+    grid-template-columns: repeat(3, 1fr) 1.5fr;
+}
+
+.brand-logo {
+    font-size: 22px;
+    grid-area: brand;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.brand-logo img {
+    height: 40px;
+    vertical-align: middle;
+}
+
+.connect-with-us {
+    display: grid;
+    gap: 8px;
+    grid-area: newsletter;
+    grid-template-rows: repeat(3, max-content);
+}
+
+.newsletter {
+    margin-top: 5px;
+    color: #ffffff63;
+}
+
+.newsletter p {
+    padding: 5px;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+form {
+    display: flex;
+    gap: 15px;
+}
+
+#email-id {
+    width: 100%;
+    border: none;
+    outline: none;
+    line-height: 2;
+    color: black;
+    font-size: 12px;
+    padding: 5px 15px;
+    border-radius: 30px;
+    background: white;
+}
+
+#email-id::placeholder {
+    color: #dcdcdc;
+}
+
+.submit {
+    font-family: 'Baloo Bhai 2';
+    background-color: #ededed;
+    border: none;
+    color: black;
+    padding: 4px 18px;
+    font-weight: 600;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+.social-media {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.flex-c {
+    display: flex;
+    justify-content: space-between;
+    grid-area: bottom;
+    padding-top: 10px;
+    text-align: center;
+    font-size: 14px;
+    border-top: 1px solid #ffffff2b;
+}
+
+.pages-link {
+    display: flex;
+    gap: 15px;
+}
+
+@media screen and (max-width:880px) {
+    .footer-wrapper {
+        grid-template-areas: "brand brand"
+            "list1 list2"
+            "list3 newsletter"
+            "bottom bottom";
+        grid-template-columns: 1fr 1.5fr;
+        padding: 20px;
+    }
+    .tech,.pic1,.pic3,.pic4{
+        width: 100%;
+    }
+    .tech h4{
+        font-size: 30px;
+    }
+    .tech p{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:680px) {
+    .flex-c {
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 10px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .footer-wrapper {
+        grid-template-areas: "brand brand"
+            "list1 list2"
+            "list3 list3"
+            "newsletter newsletter"
+            "bottom bottom";
+        gap: 25px;
+        grid-template-columns: 1fr auto;
+    }
+}
+
+
+
+/* productpage */
+
+
+
+#prodetails{
+    display: flex;
+    margin-top: 20px;
+}
+.section-p1{
+    padding: 40px 80px;
+}
+#prodetails .single-pro-image{
+    width: 40%;
+    margin-right: 50px;
+}
+.small-img-group{
+    margin-top: 10px;
+ display: flex;
+ justify-content: space-between;
+}
+.small-img-col{
+    flex-basis: 24%;
+    cursor: pointer;
+}
+#prodetails .single-pro-details{
+ width: 50%;
+ padding-top: 30px;
+
+}
+#prodetails .single-pro-details h4{
+    padding: 20px 0 20px 0;
+    font-size: 27px;
+}
+#prodetails .single-pro-details h2{
+    font-size: 26px;
+}
+.single-pro-details h6{
+    background-color: black;
+    display: inline;
+    color: white;
+    padding: 3px;
+    font-size: 10px;
+}
+#prodetails .single-pro-details button{
+    width: 30%;
+    text-align: center;
+    background-color: #5c0e14;
+    padding:10px 20px;
+    color: white;
+}
+#prodetails .single-pro-details div{
+    margin-bottom: 2px;
+    width: 30%;
+    text-align: center;
+    background-color: black;
+    padding:10px 20px;
+    color: white;
+}
+#prodetails .single-pro-details span{
+    text-wrap: balance;
+    line-height: 25px;
+}
+.probaner-1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+}
+.probaner-1 h1{
+    font-size: 50px;
+}
+.probaner-1 p span{
+    font-size: 18px;
+    color: maroon;
+}
+@media screen and (max-width: 477px){
+    .section-p1{
+        padding: 20px;
+    }
+    #prodetails {
+        flex-direction: column;
+    }
+    #prodetails .single-pro-image{
+        width: 100%;
+    }
+    #prodetails .single-pro-details{
+     width: 100%;
+    }
+    #prodetails .single-pro-details h4{
+        padding: 20px 0 20px 0;
+        font-size: 35px;
+    }
+    .probaner-1 p{
+        padding: 30px;
+    }
+    .para3{
+        margin-top: 10px;
+        font-size: 17px;
+    }
+    .para4{
+        margin-bottom: 20px;
+        font-size: 30px;
+    }
+    #prodetails .single-pro-details button{
+        width: 100%;
+    }
+    #prodetails .single-pro-details div{
+        width: 100%;
+    }
+}

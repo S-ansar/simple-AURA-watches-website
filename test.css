@@ -1,0 +1,101 @@
+
+/* productpage */
+
+
+
+#prodetails{
+    display: flex;
+    margin-top: 20px;
+}
+.section-p1{
+    padding: 40px 80px;
+}
+#prodetails .single-pro-image{
+    width: 40%;
+    margin-right: 50px;
+}
+.small-img-group{
+    margin-top: 10px;
+ display: flex;
+ justify-content: space-between;
+}
+.small-img-col{
+    flex-basis: 24%;
+    cursor: pointer;
+}
+#prodetails .single-pro-details{
+ width: 50%;
+ padding-top: 30px;
+
+}
+#prodetails .single-pro-details h4{
+    padding: 20px 0 20px 0;
+    font-size: 27px;
+}
+#prodetails .single-pro-details h2{
+    font-size: 26px;
+}
+.single-pro-details h6{
+    background-color: black;
+    display: inline;
+    color: white;
+    padding: 3px;
+    font-size: 10px;
+}
+#prodetails .single-pro-details button{
+    width: 30%;
+    text-align: center;
+    background-color: #5c0e14;
+    padding:10px 20px;
+    color: white;
+}
+#prodetails .single-pro-details div{
+    margin-bottom: 2px;
+    width: 30%;
+    text-align: center;
+    background-color: black;
+    padding:10px 20px;
+    color: white;
+}
+#prodetails .single-pro-details span{
+    text-wrap: balance;
+    line-height: 25px;
+}
+.probaner-1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+}
+.probaner-1 h1{
+    font-size: 50px;
+}
+.probaner-1 p span{
+    font-size: 18px;
+    color: maroon;
+}
+@media screen and (max-width: 477px){
+    .section-p1{
+        padding: 20px;
+    }
+    #prodetails {
+        flex-direction: column;
+    }
+    #prodetails .single-pro-image{
+        width: 100%;
+    }
+    #prodetails .single-pro-details{
+     width: 100%;
+    }
+    #prodetails .single-pro-details h4{
+        padding: 20px 0 20px 0;
+        font-size: 35px;
+    }
+    .probaner-1 p{
+        padding: 30px;
+    }
+    #prodetails .single-pro-details button{
+        width: 100%;
+    }
+    #prodetails .single-pro-details div{
+        width: 100%;
+    }
+}

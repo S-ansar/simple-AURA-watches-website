@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AURA watches</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <!--navbar-->
+    <nav class="navbar navbar-expand-lg" id="navbar">
+    </nav>
+    <!--end navbar-->
+    <section id="prodetails" class="section-p1">
+        <div class="single-pro-image">
+            <img src="./images/limited3.jpg" width="100%" id="MainImg" alt="">
+            <div class="small-img-group">
+                <div class="small-img-col">
+                    <img src="./watches-parts/p6limited1.jpg" width="100%" class="small-img" alt="">
+                </div>
+                <div class="small-img-col">
+                    <img src="./watches-parts/p6limited2.jpg" width="100%" class="small-img" alt="">
+                </div>
+                <div class="small-img-col">
+                    <img src="./watches-parts/p6limited3.jpg" width="100%" class="small-img" alt="">
+                </div>
+                <div class="small-img-col">
+                    <img src="./watches-parts/p6limited4.jpg" width="100%" class="small-img" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="single-pro-details">
+
+            <h4>SKELETON</h4>
+            <h2>RS: 360,500.00</h2>
+            <a href="documentation-of-watches/limited-edition.docx"><div>Download Info</div></a>
+            <button class="normal">ADD TO CART</button>
+            <h4>Product Detail</h4>
+            <span>Skeleton watches feature intricate, transparent designs that showcase the inner workings of the watch
+                movement. With their open dial, these timepieces highlight the delicate gears, springs, and mechanical
+                components in motion. Often crafted with precision, skeleton watches offer a unique blend of artistry
+                and horological craftsmanship. They appeal to watch enthusiasts who appreciate the complexity of
+                watchmaking. Ideal for those who value both style and function, these watches are an impressive
+                statement piece.</span>
+        </div>
+    </section>
+    <section class="probaner-1">
+        <div>
+            <h1>Feature Products</h1>
+            <p>Summer Collection <span>20% OFF</span> only till RAMZAN 29th</p>
+        </div>
+    </section>
+    <div class="container">
+        <div class="row">
+            <div class="main" style=" text-align: left;">
+                <a href="sproduct-DATE6.html"><img src="./images/aboutaura15.jpg" alt=""></a>
+                <div>
+                    <h6 style="font-size: 18px;" class="mt-4">Skeleton 001</h6>
+                    <p class="p1" style="font-size: 11px;">FROSTED STEEL</p>
+                    <p class="p2" style="font-size: 13px;">$ 960,550.00</p>
+                </div>
+            </div>
+            <div class="main" style=" text-align: left;">
+                <a href="sproduct-DATE5.html"><img src="./images/aboutaura14.jpg" alt=""></a>
+                <div>
+                    <h6 style="font-size: 18px;" class="mt-4">Skeleton 002</h6>
+                    <p class="p1" style="font-size: 11px;">FROSTED ROSE</p>
+                    <p class="p2" style="font-size: 13px;">$ 930,950.00</p>
+                </div>
+            </div>
+            <div class="main" style=" text-align: left;">
+                <a href="sproduct-premier1.html"><img src="./images/aboutaura06.jpg   " alt=""></a>
+                <div>
+                    <h6 style="font-size: 18px;" class="mt-4">Skeleton 003</h6>
+                    <p class="p1" style="font-size: 11px;">ROSE/RUBY</p>
+                    <p class="p2" style="font-size: 13px;">$ 850,999.00</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <script>
+        var MainImg = document.getElementById("MainImg")
+        var smallimg = document.getElementsByClassName("small-img")
+
+        smallimg[0].onclick = function () {
+            MainImg.src = smallimg[0].src;
+        }
+
+        smallimg[1].onclick = function () {
+            MainImg.src = smallimg[1].src;
+        }
+
+        smallimg[2].onclick = function () {
+            MainImg.src = smallimg[2].src;
+        }
+
+        smallimg[3].onclick = function () {
+            MainImg.src = smallimg[3].src;
+        }
+    </script>
+
+
+    <!--event email-->
+    <div class="email-event mt-5">
+        <div class="container-fluid">
+            <p style="font-size: 15px;">Subscribe to receive email updates regarding upcoming events, collections and
+                more.</p>
+            <input type="Email" placeholder="  EMAIL ADDRESS">
+            <button>SUBMIT</button>
+        </div>
+    </div>
+    <br>
+    <!--footer-->
+    <footer id="footer">
+    </footer>
+    <!--end footer-->
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossorigin="anonymous"></script>
+<script src="index.js"></script>
+
+</html>
